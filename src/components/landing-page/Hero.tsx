@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import heroPic from "../../assets/image/hero-pic.jpg";
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
             dolorem sunt assumenda iure sit!
           </p>
 
-          <div className="space-x-5 mt-14">
+          <div className="space-x-5 my-14">
             <Link
               to={"/login"}
               className="bg-blue-700 text-white shadow px-5 py-2 rounded-md font-semibold hover:shadow-lg"
@@ -33,8 +34,24 @@ const Hero = () => {
               join with HMO
             </Link>
           </div>
+          <div className="grid lg:grid-cols-3 w-max gap-5 pt-10">
+            <div>
+              <h1 className="font-bold text-2xl">24/7</h1>
+              <p>Online Support</p>
+            </div>
+            <div>
+              <h1 className="font-bold text-2xl">1M+</h1>
+              <p>Successful Visits</p>
+            </div>
+            <div>
+              <h1 className="font-bold text-2xl">98%</h1>
+              <p>Patient Satification</p>
+            </div>
+          </div>
         </div>
-        <div className="hidden lg:flex w-full h-100 bg-blue-700 rounded-lg"></div>
+        <div className="hidden lg:flex w-full h-90 bg-blue-700 rounded-2xl overflow-hidden shadow">
+          <img src={heroPic} alt="Docto image" />
+        </div>
       </div>
     </div>
   );
