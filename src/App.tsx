@@ -1,9 +1,16 @@
+import { Route, Routes } from "react-router-dom"
+import AuthLayout from "./layouts/AuthLayout"
+import LandingPageLayout from "./layouts/LandingPageLayout"
 
 const App = () => {
   return (
-    <div className="text-3xl text-blue-900">
-      New app here nice
-    </div>
+    <Routes>
+        <Route element={<AuthLayout/>}>
+        </Route>
+
+        <Route path="/" element={<LandingPageLayout/>}>
+        </Route>
+    </Routes>
   )
 }
 
