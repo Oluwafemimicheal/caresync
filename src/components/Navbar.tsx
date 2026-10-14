@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <header className="bg-white shadow py-4 sticky top-0">
-      <nav className="w-full px-10 lg:px-0 lg:w-6xl mx-auto flex justify-between items-center">
+      <nav className="w-full px-5 lg:px-0 lg:w-6xl mx-auto flex justify-between items-center">
         <div>
           <h1 className="font-bold text-blue-700 text-2xl">CareSync</h1>
         </div>
