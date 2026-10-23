@@ -4,6 +4,7 @@ import { BiErrorAlt } from "react-icons/bi";
 import { BsArrowLeft } from "react-icons/bs";
 import { FaNairaSign } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import ProjectLogo from "../../utilis/ProjectLogo";
 
 const Registration = () => {
   const [selected, setSelected] = useState("choose"); // "choose", "registration", "password", "loading"
@@ -13,7 +14,7 @@ const Registration = () => {
     <div className="space-y-8 w-full h-full overflow-y-auto scrollbar-none p-4">
       {/* Header Section */}
       <div className="flex justify-center items-center space-y-3 flex-col text-center">
-        <h1 className="text-lg font-extrabold text-blue-700">CareSync</h1>
+        <ProjectLogo />
         <div className="space-y-3">
           <div>
             <h2 className="text-2xl font-semibold">Create an account</h2>
@@ -296,7 +297,7 @@ const Registration = () => {
         {selected === "loading" && (
           <div className="space-y-5 bg-white p-4 rounded-lg shadow h-40 flex justify-center items-center">
             <div className="text-center">
-              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-700 mx-auto mb-2"></div>
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-700 mx-auto mb-2 "></div>
               <h3 className="font-medium">Creating Account...</h3>
             </div>
           </div>
